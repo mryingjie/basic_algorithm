@@ -1,0 +1,210 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 130023424 bytes for Failed to commit area from 0x0000000085c00000 to 0x000000008d800000 of length 130023424.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (c:/BuildAgent/work/dd4f663211fab7c/src/hotspot/os/windows/os_windows.cpp:3272), pid=7752, tid=10432
+#
+# JRE version:  (11.0.2+9) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.2+9-b159.34, mixed mode, aot, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: com.intellij.util.ReadEnv C:\Users\zhengyingjie\AppData\Local\Temp\intellij-cmd-env.tmp
+
+Host: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz, 4 cores, 7G,  Windows 7 , 64 bit Build 7601 (6.1.7601.23677)
+Time: Thu May 30 16:52:28 2019 ?D1¨²¡À¨º¡Á?¨º¡À?? elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000026a000):  JavaThread "Unknown thread" [_thread_in_vm, id=10432, stack(0x00000000022d0000,0x00000000023d0000)]
+
+Stack: [0x00000000022d0000,0x00000000023d0000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x5da82a]
+V  [jvm.dll+0x70b6c9]
+V  [jvm.dll+0x70cbe8]
+V  [jvm.dll+0x70d2b3]
+V  [jvm.dll+0x240f18]
+V  [jvm.dll+0x5d7fc4]
+V  [jvm.dll+0x5cd115]
+V  [jvm.dll+0x2fa5eb]
+V  [jvm.dll+0x2fa55a]
+V  [jvm.dll+0x2fa432]
+V  [jvm.dll+0x2ff316]
+V  [jvm.dll+0x347993]
+V  [jvm.dll+0x348096]
+V  [jvm.dll+0x347a93]
+V  [jvm.dll+0x2d5588]
+V  [jvm.dll+0x2d66c7]
+V  [jvm.dll+0x6eaac7]
+V  [jvm.dll+0x6ec22c]
+V  [jvm.dll+0x3551c9]
+V  [jvm.dll+0x6d274e]
+V  [jvm.dll+0x3bd953]
+V  [jvm.dll+0x3bfcc1]
+C  [java.exe+0x3763]
+C  [java.exe+0x17a0c]
+C  [kernel32.dll+0x159cd]
+C  [ntdll.dll+0x2a561]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000000000024ad80, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x0000000000280000 GCTaskThread "GC Thread#0" [stack: 0x0000000014c30000,0x0000000014d30000] [id=11172]
+  0x00000000002b2000 ConcurrentGCThread "G1 Main Marker" [stack: 0x00000000199e0000,0x0000000019ae0000] [id=10288]
+  0x00000000002b3000 ConcurrentGCThread "G1 Conc#0" [stack: 0x0000000019c60000,0x0000000019d60000] [id=8308]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x000007fece555687]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000000000267540] Heap_lock - owner thread: 0x000000000026a000
+
+Heap address: 0x0000000085c00000, size: 1956 MB, Compressed Oops mode: Non-zero based: 0x0000000085c00000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x000000013f820000 - 0x000000013f867000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\java.exe
+0x0000000077240000 - 0x00000000773ea000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000077020000 - 0x000000007713f000 	C:\Windows\system32\kernel32.dll
+0x000007fefd0e0000 - 0x000007fefd14a000 	C:\Windows\system32\KERNELBASE.dll
+0x0000000077140000 - 0x000000007723a000 	C:\Windows\system32\USER32.dll
+0x000007feff060000 - 0x000007feff0c7000 	C:\Windows\system32\GDI32.dll
+0x000007fefd440000 - 0x000007fefd44e000 	C:\Windows\system32\LPK.dll
+0x000007feff270000 - 0x000007feff33a000 	C:\Windows\system32\USP10.dll
+0x000007fefe860000 - 0x000007fefe8ff000 	C:\Windows\system32\msvcrt.dll
+0x000007fefb1d0000 - 0x000007fefb3c4000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_fa3b1e3d17594757\COMCTL32.dll
+0x000007fefe4f0000 - 0x000007fefe561000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefd500000 - 0x000007fefd52e000 	C:\Windows\system32\IMM32.DLL
+0x000007fefebb0000 - 0x000007fefecb9000 	C:\Windows\system32\MSCTF.dll
+0x000007fef8be0000 - 0x000007fef8be3000 	C:\Windows\system32\api-ms-win-core-synch-l1-2-0.DLL
+0x000007fef0270000 - 0x000007fef0287000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\vcruntime140.dll
+0x000007fef1ac0000 - 0x000007fef1ac4000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-crt-runtime-l1-1-0.dll
+0x000007fecfc50000 - 0x000007fecfd4a000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\ucrtbase.DLL
+0x000007fee7540000 - 0x000007fee7543000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-core-localization-l1-2-0.dll
+0x000007fee3f80000 - 0x000007fee3f83000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-core-processthreads-l1-1-1.dll
+0x000007fee3dd0000 - 0x000007fee3dd3000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-core-file-l1-2-0.dll
+0x000007fee26c0000 - 0x000007fee26c3000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-core-timezone-l1-1-0.dll
+0x000007fee0120000 - 0x000007fee0123000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-core-file-l2-1-0.dll
+0x000007feefaf0000 - 0x000007feefaf4000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-crt-string-l1-1-0.dll
+0x000007feef240000 - 0x000007feef243000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-crt-heap-l1-1-0.dll
+0x000007feef1b0000 - 0x000007feef1b4000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-crt-stdio-l1-1-0.dll
+0x000007feef1a0000 - 0x000007feef1a4000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-crt-convert-l1-1-0.dll
+0x000007fedff20000 - 0x000007fedffbd000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\msvcp140.dll
+0x000007feed380000 - 0x000007feed383000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-crt-locale-l1-1-0.dll
+0x000007feef0b0000 - 0x000007feef0b5000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-crt-math-l1-1-0.dll
+0x000007feed0e0000 - 0x000007feed0e5000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-crt-multibyte-l1-1-0.dll
+0x000007feef090000 - 0x000007feef093000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-crt-time-l1-1-0.dll
+0x000007feef0a0000 - 0x000007feef0a3000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-crt-filesystem-l1-1-0.dll
+0x000007feef150000 - 0x000007feef153000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-crt-environment-l1-1-0.dll
+0x000007feef140000 - 0x000007feef143000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\api-ms-win-crt-utility-l1-1-0.dll
+0x000007fece270000 - 0x000007feced26000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\server\jvm.dll
+0x000007feff190000 - 0x000007feff26b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007feff040000 - 0x000007feff05f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefef10000 - 0x000007feff03d000 	C:\Windows\system32\RPCRT4.dll
+0x000007fef8ff0000 - 0x000007fef8ff9000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefe2c0000 - 0x000007fefe30d000 	C:\Windows\system32\WS2_32.dll
+0x000007fefd450000 - 0x000007fefd458000 	C:\Windows\system32\NSI.dll
+0x000007fefb760000 - 0x000007fefb79b000 	C:\Windows\system32\WINMM.dll
+0x000007fefc080000 - 0x000007fefc08c000 	C:\Windows\system32\VERSION.dll
+0x0000000077400000 - 0x0000000077407000 	C:\Windows\system32\PSAPI.DLL
+0x000007feee690000 - 0x000007feee6a1000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\verify.dll
+0x000007fefa560000 - 0x000007fefa685000 	C:\Windows\system32\DBGHELP.DLL
+0x000007feed390000 - 0x000007feed3b9000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\java.dll
+0x000007feee300000 - 0x000007feee317000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\zip.dll
+0x000007feef080000 - 0x000007feef08b000 	D:\JetBrains\PyCharm 2019.1.1\jre64\bin\jimage.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;D:\JetBrains\PyCharm 2019.1.1\jre64\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_fa3b1e3d17594757;D:\JetBrains\PyCharm 2019.1.1\jre64\bin\server
+
+VM Arguments:
+java_command: com.intellij.util.ReadEnv C:\Users\zhengyingjie\AppData\Local\Temp\intellij-cmd-env.tmp
+java_class_path (initial): D:\JetBrains\PyCharm 2019.1.1\lib\util.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 3                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 4                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 130023424                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 2051014656                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5830092                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122914074                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122914074                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=D:\Java\jdk1.8.0_141
+PATH=E:\python\basic_algorithm\venv\Scripts;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;D:\Python37\Scripts\;D:\Python37\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Java\jdk1.8.0_141\bin;D:\Java\jdk1.8.0_141\jre\bin;D:\Git\cmd;D:\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin\;E:\shotcut;D:\TortoiseGit\bin;C:\Program Files (x86)\MySQL\MySQL Utilities 1.6\;D:\UltraEdit;D:\hadoop-2.7.2\bin;D:\scala-2.11.8\bin;C:\Users\zhengyingjie\AppData\Local\Programs\Fiddler;D:\JetBrains\PyCharm 2019.1.1\bin;
+USERNAME=zhengyingjie
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.23677)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 61 stepping 4, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx, fma
+
+Memory: 4k page, system-wide physical 7823M (298M free)
+TotalPageFile size 9869M (AvailPageFile size 25M)
+current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
+current process commit charge ("private bytes"): 57M, peak: 180M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.2+9-b159.34) for windows-amd64 JRE (11.0.2+9-b159.34), built on Mar 26 2019 11:55:29 by "" with MS VC++ 14.0 (VS2015)
+
+END.

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a57c3599-09e6-46f6-ad78-8eda3c4d6be5" name="Default Changelist" comment="group">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Include/merge_sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/basic_algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/basic_algorithm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a57c3599-09e6-46f6-ad78-8eda3c4d6be5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,8 +110,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/venv/Include/merge_sort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            <state relative-caret-position="756">
+              <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -174,7 +170,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1389" />
-    <option name="y" value="172" />
+    <option name="y" value="171" />
     <option name="width" value="2100" />
     <option name="height" value="1500" />
   </component>
@@ -214,7 +210,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv/Include/regression" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv/Include" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -351,6 +347,9 @@
       <module name="basic_algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/Include" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -391,7 +390,7 @@
       <workItem from="1557387191520" duration="15302000" />
       <workItem from="1559379936305" duration="269000" />
       <workItem from="1559380248525" duration="172000" />
-      <workItem from="1559380437642" duration="8856000" />
+      <workItem from="1559380437642" duration="8916000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1557105073795</created>
@@ -414,11 +413,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557211953706</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mergeSort">
+      <created>1559394984144</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559394984144</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64486000" />
+    <option name="totallyTimeSpent" value="64546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="926" y="115" width="1400" height="1000" extended-state="0" />
@@ -494,7 +500,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="linear_regression" />
     <MESSAGE value="group" />
-    <option name="LAST_COMMIT_MESSAGE" value="group" />
+    <MESSAGE value="mergeSort" />
+    <option name="LAST_COMMIT_MESSAGE" value="mergeSort" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -703,8 +710,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Include/merge_sort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="756">
+          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
         </state>
       </provider>
     </entry>
